@@ -1191,7 +1191,8 @@ section { scroll-margin-top: 84px; }
     width: min(320px, 80vw);
     margin: -70px auto 8px;
   }
-  .breed-frame::before { top: -15px; transform: none; }
+  .breed-frame::before { left: 12px; top: -15px; transform: none; }
+  .breed-frame::after { right: 12px; top: -15px; transform: none; }
 
   .news-grid, .contacts-grid { grid-template-columns: 1fr; }
   .news-card { grid-template-columns: 150px 1fr; }
@@ -1204,6 +1205,8 @@ section { scroll-margin-top: 84px; }
   .step-arrow { display: none; }
 
   .dogs-grid, .litter-grid { grid-template-columns: 1fr; }
+  /* кобели: на узком экране тоже в одну колонку (перекрывает правило 2 колонок) */
+  .dogs-group:first-of-type .dogs-grid { grid-template-columns: 1fr; }
   .news-card { grid-template-columns: 1fr; }
   .news-photo { aspect-ratio: 16 / 9; }
 
