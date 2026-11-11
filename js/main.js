@@ -16,12 +16,14 @@
     nav.classList.remove('open');
     burger.classList.remove('open');
     burger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
   };
 
   burger.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
     burger.classList.toggle('open', open);
     burger.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
   });
 
   nav.addEventListener('click', (e) => {

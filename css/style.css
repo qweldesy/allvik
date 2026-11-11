@@ -146,7 +146,7 @@ section { scroll-margin-top: 84px; }
 }
 
 .header-inner {
-  width: min(1320px, 94vw);
+  width: min(1320px, calc(100% - 24px));
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -233,11 +233,12 @@ section { scroll-margin-top: 84px; }
   gap: 5px;
   background: none;
   border: 0;
-  padding: 8px;
+  padding: 10px;
+  margin-right: -10px;
   cursor: pointer;
 }
 .burger span {
-  width: 22px; height: 2px;
+  width: 24px; height: 2px;
   background: var(--ink);
   transition: transform 0.3s, opacity 0.3s;
 }
@@ -1162,6 +1163,9 @@ section { scroll-margin-top: 84px; }
   .main-nav a { font-size: 13px; padding-block: 10px; }
 
   .burger { display: flex; }
+  /* при выехавшем в слой меню nav выходит из потока flex —
+     прижимаем кнопку меню к правому краю явно */
+  .header-actions { margin-left: auto; }
   .social-mini { display: none; }
 
   .hero { min-height: 88vh; }
