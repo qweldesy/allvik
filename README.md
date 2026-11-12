@@ -16,7 +16,7 @@ Google Fonts — Montserrat и Caveat).
 
 Сайт опубликован через GitHub Pages и доступен по адресу:
 
-**https://qerlys.github.io/allvik/**
+**https://qweldesy.github.io/allvik/**
 
 Обновления публикуются автоматически: достаточно сделать `git push` в ветку
 `main` — GitHub пересоберёт сайт за 1–2 минуты.
